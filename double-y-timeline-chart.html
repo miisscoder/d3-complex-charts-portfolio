@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double-Y Timeline Chart</title>
+    <link rel="stylesheet" href="double-y-timeline-chart.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Double-Y Timeline Chart</h1>
+            <p>Outer Y: Sites | Inner Y: Services</p>
+        </header>
+
+        <!-- 时间显示 -->
+        <div class="time-display">
+            <div class="current-time">
+                <button id="prev-btn" class="nav-btn">◀</button>
+                <span>Current Time: </span>
+                <span id="current-time-display">-</span>
+                <button id="next-btn" class="nav-btn">▶</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>View Mode:</label>
+                <div class="mode-buttons">
+                    <button class="mode-btn active" data-mode="month">Month</button>
+                    <button class="mode-btn" data-mode="quarter">Quarter</button>
+                    <button class="mode-btn" data-mode="year">Year</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 图表容器 -->
+        <div class="chart-container">
+            <div id="timeline-chart"></div>
+            
+            <!-- 简化的详情区域 -->
+            <div id="data-details" class="details-content">
+                <div class="no-selection">
+                    <span class="no-selection-icon">👆</span>
+                    <p>Click on any bar to see details here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="double-y-timeline-chart.js"></script>
+</body>
+</html>
