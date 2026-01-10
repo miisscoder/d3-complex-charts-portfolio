@@ -1,4 +1,4 @@
-###### Double-Y Timeline Chart - Interactive Timeline Visualization
+##### Double-Y Timeline Chart - Interactive Timeline Visualization
 
 ## 📋 Project Overview
 An advanced interactive timeline visualization chart designed for displaying multi-layered time series data. Features a double Y-axis structure (outer Y-axis: sites, inner Y-axis: service types) for complex medical or business data analysis, with comprehensive filtering and data exploration capabilities.
